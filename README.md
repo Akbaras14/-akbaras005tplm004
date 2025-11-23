@@ -29,3 +29,6 @@ Kelas : 05 TPLM 004
 
 📄 Catatan Tambahan
 Seluruh tugas dalam repository ini dibuat secara mandiri sebagai bentuk latihan dan penguatan konsep dasar pemrograman web. Setiap file dapat dikembangkan lebih lanjut untuk kebutuhan pembelajaran atau referensi di masa depan.
+
+online :
+https://akbaras005tplm004.netlify.app/

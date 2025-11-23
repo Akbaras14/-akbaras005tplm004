@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Line, Paragraph, dan Heading HTML",
+    "subtitle": "Tugas Praktekum Pertemuan 2 Pemrograman Web 1",
+    "image": "assets/materi.jfif",
+    "link": "assets/data/tugas2.html"
+  },
+  {
+    "title": "Style Bold, Italic, Underline, dan Strikethrough di HTML",
+    "subtitle": "Tugas Praktikum Pertemuan 3 Pemrograman Web 1",
+   "image": "assets/materi.jfif",
+    "link": "assets/data/tugas3.html"
+  },
+{
+    "title": "Insert Vidio dan Audio di HTML",
+    "subtitle": "Tugas Praktikum Pertemuan 4 Pemrograman Web 1",
+   "image": "assets/materi.jfif",
+    "link": "assets/data/tugas4.html"
+  },
+  {
+    "title": "Card,Box,Grid di HTML dan CSS",
+    "subtitle": "Tugas Praktekum Pertemuan 5 Pemrograman Web 1",
+   "image": "assets/materi.jfif",
+    "link": "assets/data/tugas5.html"
+  },
+  {
+    "title": "List, Table, dan Link di HTML",
+    "subtitle": "Tugas Praktekum Pertemuan 6 Pemrograman Web 1",
+   "image": "assets/materi.jfif",
+    "link": "assets/data/tugas6.html"
+  },
+  {
+    "title": "Layouting Web Responsif Menggunakan Flexbox dan Media Query",
+    "subtitle": "Tugas Praktekum Pertemuan 7 Pemrograman Web 1",
+   "image": "assets/materi.jfif",
+    "link": "assets/data/tugas7.html"
+  }
+]

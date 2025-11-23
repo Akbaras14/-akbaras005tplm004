@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 10 - Penggunaan IFRAME</title>
+
+  <style>
+    /* === Reset & Font === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* === Latar belakang dan warna umum === */
+    body {
+      background: 
+        linear-gradient(rgba(0,0,50,0.5), rgba(0,0,50,0.5)),
+        url('download.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    /* === Navbar dari tugas7 === */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 50, 0.4);
+      padding: 10px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    .logo-img {
+      height: 55px;
+      width: auto;
+    }
+
+    .navigation a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .navigation a:hover {
+      color: yellow;
+      text-shadow: 0 0 10px #ffcc00;
+    }
+
+    /* === Tombol BACK === */
+    .main {
+      margin-top: 30px;
+      margin-left: 80px;
+      text-align: left;
+    }
+
+    .back-btn {
+      background: rgba(255,255,255,0.1);
+      border: 2px solid #ffcc00;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      font-size: 0.95em;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .back-btn:hover {
+      background: #ffcc00;
+      color: black;
+      text-shadow: 0 0 10px #ffcc00;
+    }
+
+    /* === Konten Utama (IFRAME) === */
+    .content {
+      margin-top: 40px;
+      text-align: center;
+      color: white;
+    }
+
+    h2 {
+      color: #ffcc00;
+      text-shadow: 0 0 10px rgba(255,255,255,0.5);
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 90%;
+      height: 550px;
+      border: 2px solid #ffcc00;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 0, 0.2);
+      background: transparent;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    iframe:hover {
+      box-shadow: 0 0 25px rgba(255, 255, 0, 0.5);
+    }
+
+    /* === Responsif === */
+    @media (max-width: 768px) {
+      iframe {
+        width: 95%;
+        height: 400px;
+      }
+      .main {
+        margin-left: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 🔹 Navbar -->
+  <header>
+    <img src="Logo zyactra.png" alt="Logo ZYACTRA" class="logo-img">
+    <nav class="navigation">
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="tugas.html">TUGAS</a>
+    </nav>
+  </header>
+
+  <!-- 🔹 Tombol BACK -->
+  <div class="main">
+    <a href="tugas.html" class="back-btn">← BACK</a>
+  </div>
+
+  <!-- 🔹 Konten IFRAME -->
+  <div class="content">
+    <h2>Penggunaan IFRAME by: ZYACTRA</h2>
+    <p>Berikut contoh penggunaan IFRAME untuk menampilkan website lain di dalam halaman ini.</p>
+
+    <iframe 
+      src="https://zyactra-ayubibrahim.netlify.app/" 
+      frameborder="0" 
+      scrolling="no">
+    </iframe>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+
+    .content {
+      margin: 30px 40px;
+      color: rgb(0, 0, 0);
+      line-height: 1.7;
+      font-size: 16px;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+      margin-top: 15px;
+      margin-bottom: 8px;
+    }
+
+    .content hr {
+      border: none;
+      border-top: 1.5px solid rgba(0, 0, 0, 0.6);
+      margin: 15px 0;
+    }
+    
+    .keterangan h2
+      {
+        text-shadow: #ffffff;
+        font-size: 30px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: center;
+      }
+    .content p, 
+    .content h1,
+    .content h2,
+    .content h3, 
+    .content h4, 
+    .content h5, 
+    .content h6 {
+      color: #111;
+      text-align: left;
+    }
+
+
+.code-display-html {
+  background: #1e1e1e;
+  color: #f5f5f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  border: #00c2ff 2px solid;
+  line-height: 1.5;
+  padding: 8px 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  position: relative;
+}
+.code-display-html .tag { color: #61dafb; }
+.code-display-html .attr { color: #ffb86c; }
+.code-display-html .value { color: #50fa7b; }
+.code-display-html .comment { color: #6272a4; font-style: italic; }
+
+.code-display-css {
+  background: #1e1e1e;
+  border: #00c2ff 2px solid;
+  color: #f5f5f5;
+  font-family: "Consolas", monospace;
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 10px 14px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Warna seperti ChatGPT */
+.code-display-css .selector { color: #7dd3fc; }
+.code-display-css .property { color: #facc15; }
+.code-display-css .value { color: #86efac; }
+.code-display-css .comment { color: #9ca3af; font-style: italic; }
+
+/* Tombol salin */
+.copy-btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  background: #00c2ff;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+.copy-btn:hover {
+  background: #0096d6;
+}
+/* Tombol berada di pojok kanan atas 'di dalam' code-display */
+.copyBtn-html {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  border: #00c2ff 2px solid;
+  border-radius: 4px;
+  background-color: #00c2ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.copyBtn-html:hover {
+  background-color: #0096d6;
+}
+
+
+.code-display-html:hover {
+  background: #f0f0f000;
+}
+.code-display-css:hover {
+  background: #00000000;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 15px 20px;
+    padding: 15px;
+    font-size: 10px;
+  }
+
+    .content p, 
+    .content h1,
+    .content h2,
+    .content h3, 
+    .content h4, 
+    .content h5, 
+    .content h6 {
+      color: #111;
+      text-align: left;
+      font-size: 8px;
+    }
+  
+      .keterangan h2
+      {
+        text-shadow: #ffffff;
+        font-size: 15px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        color: #ffffff;
+        text-align: center;
+      }
+
+  .code-display {
+    margin: 15px 20px;       /* kurangi margin agar pas di layar kecil */
+    padding: 15px;           /* padding lebih kecil */
+    font-size: 10px;  
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <link rel="stylesheet" href="styles.css" />
+    <title>Akbar AS</title>
+  </head>
+  <body>
+<nav>
+  <div class="navbar">
+    <div class="navheader">
+      <div class="navlogo">
+        <i class="fas fa-code"></i> <!-- Added icon for modernity -->
+        <a href="#">Akbar AS</a>
+      </div>
+      <div class="nav-actions">
+      </div>
+      <div class="navmenubtn" id="menu-btn">
+        <i class="fas fa-bars"></i> <!-- Changed to Font Awesome for consistency -->
+      </div>
+    </div>
+    <ul class="links" id="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#materi">Materi</a></li>
+      <li><a href="#profile">Profile</a></li>
+    </ul>
+    <div class="overlay" id="overlay"></div>
+  </div>
+</nav>
+<header class="sectioncontainer headercontainer" id="home">
+
+  <div class="header-flex">
+    <img src="assets/img/akbarporto.jpg" alt="header" class="img-rounded">
+
+
+    <div class="header-text">
+      <h1>
+        Hai i'm <br />
+        Akbar Aditiya Sugianto <br/>
+        <span>Mari kenalan!</span>
+      </h1>
+      <div class="running-wrapper">
+        <div class="running-text">
+          BENGKEL CODING • BELAJAR PEMROGRAMAN WEB 1 • TEKNIK INFORMATIKA UNIVERSITAS PAMULANG • BENKGEL CODING • BELAJAR PEMROGRAMAN WEB 1 • TEKNIK INFORMATIKA UNIVERSITAS PAMULANG •
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>
+   website ini dibuat untuk memenuhi Tugas Pemrograman Web 1<br/> TEKNIK INFORMATIKA <br/>UNIVERSITAS PAMULANG<br/>2025
+  </p>
+  
+</header>
+    <section class="sectioncontainer skillcontainer">
+      <h2>BAHASA PEMROGRAMAN YANG DIGUNAKAN </h2>
+      <ul class="skill__flex">
+        <li>
+          <span><i class="ri-javascript-fill"></i></span>
+        </li>
+        <li>
+          <span><i class="ri-html5-fill"></i></span>
+        </li>
+        <li>  
+        <span><i class="fab fa-css3-alt"></i></span> 
+      </li>
+      </ul>
+    </section>
+
+<section class="sectioncontainer matericontainer" id="materi">
+  <h2>MATERI PEMROGRAMAN 1</h2>
+  <div class="materigrid" id="materi-list"></div>
+</section>
+
+  <section class="sectioncontainer profilecontainer" id="profile">
+    <h2>PROFILE</h2>
+    <img src="assets/img/akbarporto.jpg" alt="footer" />
+    <h1>Akbar Aditiya Sugianto
+    <br>05 TPLM 004 
+    <br/>231011403729
+    <br/>TEKNIK INFORMATIKA
+    <br/>UNIVERSITAS PAMULANG</h1>
+        <div class="kirimemail">
+      <a href="mailto:akbaraditiya0@gmail.com">
+        <span><i class="ri-mail-line"></i></span>akbaraditiya0@gmail.com
+      </a>
+    </div>
+
+    <ul class="footer__socials">
+      <li><a href="https://www.google.com" target="_blank"><i class="ri-google-fill"></i></a></li>
+      <li><a href="https://wa.me/+6285893802972" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+      <li><a href="https://www.tiktok.com/@bengkel_coding" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+    </ul>
+  </section>
+   
+
+<footer>
+  <div class="footer__container sectioncontainer">
+    <div class="footer-form">
+      <h3>Review</h3>
+
+      <form id="saranForm">
+        <p>Rating</p>
+        <div class="rating">
+          
+          <input type="radio" name="rating" id="star5" value="5"><label for="star5">★</label>
+          <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
+          <input type="radio" name="rating" id="star3" value="3"><label for="star3">★</label>
+          <input type="radio" name="rating" id="star2" value="2"><label for="star2">★</label>
+          <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
+        </div>
+        <input type="text" id="nama" placeholder="Masukkan Nama Anda" required />
+        <textarea id="saran" placeholder="Tulis kritik dan saran Anda..." required></textarea>
+        <button type="submit">Kirim</button>
+        <div id="loading" class="loading-spinner" style="display:none;"></div>
+      </form>
+    </div>
+    <div class="footer-feedback-list" id="feedbackList">
+      <h3>REVIEWER</h3>
+    <!-- Data dari Spreadsheet akan ditampilkan di sini -->
+  <div class="feedback-filter">
+    <label for="ratingFilter" style="color:#fff; margin-right:8px;">Filter Rating:</label>
+    <select id="ratingFilter">
+      <option value="all">Semua Rating</option>
+      <option value="5">5 Bintang</option>
+      <option value="4">4 Bintang</option>
+      <option value="3">3 Bintang</option>
+      <option value="2">2 Bintang</option>
+      <option value="1">1 Bintang</option>
+    </select>
+  </div>
+
+  <!-- CONTAINER CARD -->
+  <div class="feedback-container" id="feedbackContainer">
+    <!-- Card akan di-render oleh JS -->
+  </div>
+
+  <!-- LOAD MORE BUTTON -->
+  <button id="loadMoreBtn" class="load-more-btn" style="display:none;">Load More</button>
+
+    </div>
+
+
+    <div class="footer__copyright">
+      <small>© 2025 Akbar Aditiya Sugianto BENGKEL CODING.</small>
+    </div>
+  </div>
+</footer>
+
+    <script src="materi.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js?v=2.0"></script>
+
+  </body>
+</html>

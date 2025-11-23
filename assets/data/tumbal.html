@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>TUGAS 7 - Wisata Indonesia</title>
+  <style>
+    /* === RESET & FONTS === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* === BACKGROUND === */
+    body {
+      background: 
+        linear-gradient(rgba(0,0,50,0.5), rgba(0,0,50,0.5)),
+        url('download.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
+    }
+
+    /* === NAVBAR === */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 50, 0.4);
+      padding: 10px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    .logo-img {
+      height: 55px;
+      width: auto;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: yellow;
+      text-shadow: 0 0 10px #ffcc00;
+    }
+
+    /* === TOMBOL BACK === */
+    .main {
+      margin-top: 30px;
+      margin-left: 80px;
+    }
+
+    .back-btn {
+      background: rgba(255,255,255,0.1);
+      border: 2px solid #ffcc00;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      font-size: 0.95em;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .back-btn:hover {
+      background: #ffcc00;
+      color: black;
+      text-shadow: 0 0 10px #ffcc00;
+    }
+
+    /* === TABEL KONTEN === */
+    table {
+      width: 85%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    td {
+      padding: 20px;
+      vertical-align: top;
+      color: white;
+    }
+
+    td img {
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    }
+
+    /* Kolom kiri & kanan */
+    td[bgcolor="#F0F8FF"] {
+      background: rgba(255,255,255,0.15);
+      border-radius: 10px;
+    }
+
+    /* === JUDUL & SUBJUDUL === */
+    h1, h2, h3 {
+      color: #ffcc00;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.3em;
+      letter-spacing: 1.5px;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    ul {
+      margin-left: 25px;
+      line-height: 1.7;
+    }
+
+    /* === FOOTER === */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 50, 0.6);
+      border-top: 2px solid #ffcc00;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      .main {
+        margin-left: 20px;
+      }
+      table {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <img src="Logo zyactra.png" alt="Logo ZYACTRA" class="logo-img">
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="tugas.html">TUGAS</a>
+    </nav>
+  </header>
+
+  <!-- TOMBOL BACK -->
+  <div class="main">
+    <a href="tugas.html" class="back-btn">← BACK</a>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <div align="center">
+    <table cellpadding="10" cellspacing="0">
+      <tr>
+        <td colspan="3" align="center">
+          <h1>Wonderful Indonesia</h1>
+          <h3>Pesona Alam dan Budaya Nusantara</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <!-- Kolom kiri -->
+        <td width="25%" bgcolor="#F0F8FF">
+          <h3>Top Destinasi</h3>
+          <ul>
+            <li>Bali</li>
+            <li>Yogyakarta</li>
+            <li>Lombok</li>
+            <li>Raja Ampat</li>
+            <li>Danau Toba</li>
+          </ul>
+        </td>
+
+        <!-- Konten tengah -->
+        <td width="50%" align="center">
+          <h2>Wisata Bali</h2>
+          <img src="img/Tanah Lot Sunset_ The Floating Temple Of Bali.jpeg" 
+               width="400" height="250" alt="Tanah Lot Bali"><br><br>
+          <p>
+            Bali merupakan salah satu pulau paling terkenal di dunia karena keindahan alam, budaya, 
+            dan keramahan penduduknya. Dikenal sebagai Pulau Dewata, Bali menawarkan berbagai 
+            destinasi menarik seperti Pantai Kuta, Ubud, Tanah Lot, dan Nusa Penida.  
+            Pengunjung dapat menikmati seni tari, kuliner khas, serta pemandangan matahari terbenam yang menakjubkan.
+          </p>
+        </td>
+
+        <!-- Kolom kanan -->
+        <td width="25%" bgcolor="#F0F8FF" align="center">
+          <h3>Galeri</h3>
+          <img src="img/Raja Ampat, Papua, Indonesia.jpeg" width="100%" height="100">
+          <img src="img/download (2).jpeg" width="100%" height="100">
+          <img src="img/download (3).jpeg" width="100%" height="100">
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Wisata Indonesia | Dibuat oleh <b>Ayub Ibrahim Nasution</b>
+  </footer>
+
+</body>
+</html>

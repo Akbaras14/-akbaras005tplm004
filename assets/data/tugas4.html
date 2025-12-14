@@ -14,26 +14,12 @@
     <title>Akbar AS</title>
   </head>
   <body>
-<nav>
-  <div class="navbar">
-    <div class="navheader">
-      <div class="navlogo">
-        <i class="fas fa-code"></i> 
-        <a href="../../index.html">Akbar AS</a>
-      </div>
-      <div class="nav-actions">
-      </div>
-      <div class="navmenubtn" id="menu-btn">
-        <i class="fas fa-bars"></i> 
-      </div>
-    </div>
-    <ul class="links" id="nav-links">
-      <li><a href="../../index.html" class="active">Home</a></li>
-    </ul>
-    <div class="overlay" id="overlay"></div>
-  </div>
-</nav>
+ 
 <div class="keterangan">
+      <h2>
+    PERTEMUAN 4 <br/>
+   MENAMPILKAN GAMBAR, SUARA DAN VIDEO
+  </h2>
     <h2>
       KODE HTML DAN CSS
     </h2>
@@ -62,6 +48,17 @@
       cursor: pointer;
       transition: 0.3s;
     }
+
+.foto {
+   display: block;
+  margin: 0 auto 15px auto; /* center horizontal */
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
 
     .button-vidio:hover {
       background-color: yellow;
@@ -96,6 +93,8 @@
   
 index.html
 &lt;div class="content-vidio"&gt;
+      <h2>Menampilkan foto</h2>
+      <img src="../img/akbarporto.jpg" class="foto" width=50 height=50 alt="gambarku">
     &lt;h2&gt;Pemutar Video Interaktif&lt;/h2&gt;
     &lt;div&gt;
       &lt;video id="videoku" width="430" controls&gt;
@@ -115,6 +114,8 @@ index.html
   </div>
 
     <div class="content-vidio">
+      <h2>Menampilkan foto</h2>
+      <img src="../img/akbarporto.jpg" class="foto" width=50 height=50 alt="gambarku">
     <h2>Pemutar Video Interaktif</h2>
 <div class="video-wrapper">
   <video id="videoku" controls>

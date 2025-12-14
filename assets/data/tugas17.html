@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../sourcecode.css" />
+    <title>Akbar AS</title>
+
+  </head>
+  <body>
+
+<div class="keterangan">
+   <h2>
+    PERTEMUAN 17 <br/>
+    STRUKTUR KENDALI DAN LOOPING
+  </h2>
+    <h2>
+      KODE HTML, CSS DAN JAVASCRIPT
+    </h2>
+</div>
+
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+index.html
+
+    <div class="content">
+      <h2>Deret Bilangan Genap Habis Dibagi 3</h2>
+    <div id="output"></div>
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+script.js
+
+<script>
+        function tampilDeret() {
+            // Input nilai awal dan akhir dari user
+            let nilaiAwal = parseInt(prompt("Masukkan nilai awal:"));
+            let nilaiAkhir = parseInt(prompt("Masukkan nilai akhir:"));
+
+            // Validasi input
+            if (isNaN(nilaiAwal) || isNaN(nilaiAkhir)) {
+                alert("Input harus berupa angka!");
+                return;
+            }
+
+            if (nilaiAwal > nilaiAkhir) {
+                alert("Nilai awal harus lebih kecil atau sama dengan nilai akhir!");
+                return;
+            }
+
+            let deret = [];
+            let jumlahBilangan = 0;
+            let jumlahNilai = 0;
+
+            // Loop untuk mencari bilangan genap yang habis dibagi 3
+            for (let i = nilaiAwal; i <= nilaiAkhir; i++) {
+                if (i % 2 === 0 && i % 3 === 0) {
+                    deret.push(i);
+                    jumlahBilangan++;
+                    jumlahNilai += i;
+                }
+            }
+
+            // Menampilkan hasil
+            document.getElementById("output").innerHTML = `
+                Nilai Awal: ${nilaiAwal} <br>
+                Nilai Akhir: ${nilaiAkhir} <br>
+                Deret yang tampil: ${deret.join(", ")} <br>
+                Jumlah deret bilangan: ${jumlahBilangan} bilangan <br>
+                Jumlah nilai bilangan tersebut: ${jumlahNilai}
+            `;
+        }
+
+        // Jalankan fungsi saat halaman selesai dimuat
+        window.onload = tampilDeret;
+    </script>
+
+
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+  <div class="keterangan">
+    <h2>
+      HASIL OUTPUT
+    </h2>
+  </div>
+
+    <div class="content">
+      <h2>Deret Bilangan Genap Habis Dibagi 3</h2>
+    <div id="output"></div>
+    </div>
+    <div class="nav-prev-next">
+  <a href="tugas16.html" class="btn-circle prev">⬅</a>
+  <a href="tugas18.html" class="btn-circle next">➡</a>
+</div>
+
+
+<footer>
+  <div class="footer__container sectioncontainer">
+
+
+
+    <div class="footer__copyright">
+      <small>© 2025 Akbar Aditiya Sugianto BENGKEL CODING.</small>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../main.js?v=2.0"></script>
+    <script src="../../copybutton.js"></script>
+    <script src="../../copybuttoncss.js"></script>
+    <script>
+        function tampilDeret() {
+            // Input nilai awal dan akhir dari user
+            let nilaiAwal = parseInt(prompt("Masukkan nilai awal:"));
+            let nilaiAkhir = parseInt(prompt("Masukkan nilai akhir:"));
+
+            // Validasi input
+            if (isNaN(nilaiAwal) || isNaN(nilaiAkhir)) {
+                alert("Input harus berupa angka!");
+                return;
+            }
+
+            if (nilaiAwal > nilaiAkhir) {
+                alert("Nilai awal harus lebih kecil atau sama dengan nilai akhir!");
+                return;
+            }
+
+            let deret = [];
+            let jumlahBilangan = 0;
+            let jumlahNilai = 0;
+
+            // Loop untuk mencari bilangan genap yang habis dibagi 3
+            for (let i = nilaiAwal; i <= nilaiAkhir; i++) {
+                if (i % 2 === 0 && i % 3 === 0) {
+                    deret.push(i);
+                    jumlahBilangan++;
+                    jumlahNilai += i;
+                }
+            }
+
+            // Menampilkan hasil
+            document.getElementById("output").innerHTML = `
+                Nilai Awal: ${nilaiAwal} <br>
+                Nilai Akhir: ${nilaiAkhir} <br>
+                Deret yang tampil: ${deret.join(", ")} <br>
+                Jumlah deret bilangan: ${jumlahBilangan} bilangan <br>
+                Jumlah nilai bilangan tersebut: ${jumlahNilai}
+            `;
+        }
+
+        // Jalankan fungsi saat halaman selesai dimuat
+        window.onload = tampilDeret;
+    </script>
+
+
+  </body>
+</html>

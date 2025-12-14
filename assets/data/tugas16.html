@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../sourcecode.css" />
+    <title>Akbar AS</title>
+
+  </head>
+  <body>
+
+<div class="keterangan">
+   <h2>
+    PERTEMUAN 16 <br/>
+    TIPE DATA DAN OPERATOR
+  </h2>
+    <h2>
+      KODE HTML, CSS DAN JAVASCRIPT
+    </h2>
+</div>
+
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+index.html
+
+    <h2>Kalkulator Sederhana</h2>
+    <form onsubmit="event.preventDefault(); hitung();">
+        <label for="angka1">Angka 1:</label>
+        <input type="number" id="angka1" required><br><br>
+
+        <label for="operator">Operator:</label>
+        <select id="operator" required>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br><br>
+
+        <label for="angka2">Angka 2:</label>
+        <input type="number" id="angka2" required><br><br>
+
+        <button type="submit">Hitung</button>
+    </form>
+
+    <p id="hasil"></p>
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+script.js
+
+    <script>
+        function hitung() {
+            // Mengambil nilai dari form
+            let angka1 = parseFloat(document.getElementById("angka1").value);
+            let angka2 = parseFloat(document.getElementById("angka2").value);
+            let operator = document.getElementById("operator").value;
+            let hasil;
+
+            // Mengecek operator dan menghitung
+            if (operator === "+") {
+                hasil = angka1 + angka2;
+            } else if (operator === "-") {
+                hasil = angka1 - angka2;
+            } else if (operator === "*") {
+                hasil = angka1 * angka2;
+            } else if (operator === "/") {
+                if (angka2 === 0) {
+                    alert("Tidak bisa dibagi dengan 0!");
+                    return;
+                }
+                hasil = angka1 / angka2;
+            } else {
+                alert("Operator tidak valid!");
+                return;
+            }
+
+            // Menampilkan hasil
+            alert("Hasil: " + angka1 + " " + operator + " " + angka2 + " = " + hasil);
+            document.getElementById("hasil").innerText = "Hasil: " + hasil;
+        }
+    </script>
+
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+  <div class="keterangan">
+    <h2>
+      HASIL OUTPUT
+    </h2>
+  </div>
+
+    <div class="content">
+    <h2>Kalkulator Sederhana</h2>
+    <form onsubmit="event.preventDefault(); hitung();">
+        <label for="angka1">Angka 1:</label>
+        <input type="number" id="angka1" required><br><br>
+
+        <label for="operator">Operator:</label>
+        <select id="operator" required>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br><br>
+
+        <label for="angka2">Angka 2:</label>
+        <input type="number" id="angka2" required><br><br>
+
+        <button type="submit">Hitung</button>
+    </form>
+
+    <p id="hasil"></p>
+    </div>
+    <div class="nav-prev-next">
+  <a href="tugas15.html" class="btn-circle prev">⬅</a>
+  <a href="tugas17.html" class="btn-circle next">➡</a>
+</div>
+
+
+<footer>
+  <div class="footer__container sectioncontainer">
+
+
+
+    <div class="footer__copyright">
+      <small>© 2025 Akbar Aditiya Sugianto BENGKEL CODING.</small>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../main.js?v=2.0"></script>
+    <script src="../../copybutton.js"></script>
+    <script src="../../copybuttoncss.js"></script>
+    <script>
+        function hitung() {
+            // Mengambil nilai dari form
+            let angka1 = parseFloat(document.getElementById("angka1").value);
+            let angka2 = parseFloat(document.getElementById("angka2").value);
+            let operator = document.getElementById("operator").value;
+            let hasil;
+
+            // Mengecek operator dan menghitung
+            if (operator === "+") {
+                hasil = angka1 + angka2;
+            } else if (operator === "-") {
+                hasil = angka1 - angka2;
+            } else if (operator === "*") {
+                hasil = angka1 * angka2;
+            } else if (operator === "/") {
+                if (angka2 === 0) {
+                    alert("Tidak bisa dibagi dengan 0!");
+                    return;
+                }
+                hasil = angka1 / angka2;
+            } else {
+                alert("Operator tidak valid!");
+                return;
+            }
+
+            // Menampilkan hasil
+            alert("Hasil: " + angka1 + " " + operator + " " + angka2 + " = " + hasil);
+            document.getElementById("hasil").innerText = "Hasil: " + hasil;
+        }
+    </script>
+
+
+
+  </body>
+</html>

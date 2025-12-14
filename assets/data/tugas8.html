@@ -1,92 +1,36 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>TUGAS8 - Free Registration</title>
-  <style>
-    /* ===== BODY DAN BACKGROUND ===== */
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      color: white;
-      position: relative;
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../sourcecode.css" />
+    <title>Akbar AS</title>
+  </head>
+  <body>
+ 
+<div class="keterangan">
+   <h2>
+    PERTEMUAN 8 <br/>
+    FORM
+  </h2>
+    <h2>
+      KODE HTML DAN CSS
+    </h2>
+</div>
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: 
-        linear-gradient(rgba(0,0,50,0.5), rgba(0,0,50,0.5)),
-        url('download.jpeg') no-repeat center center fixed;
-      background-size: cover;
-      z-index: -1;
-    }
+<div class="code-container" data-type="css">
 
-    /* ===== HEADER NAVBAR ===== */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(0, 0, 50, 0.3);
-      padding: 10px 30px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-    }
+<textarea class="raw" style="display:none;">
+      
+    style.css
 
-    .logo-img {
-      height: 50px;
-      width: auto;
-      vertical-align: middle;
-    }
-
-    .navigation a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .navigation a:hover {
-      color: yellow;
-      text-shadow: 0 0 10px #ffcc00;
-    }
-
-    /* ===== TOMBOL BACK ===== */
-    .main {
-      margin-top: 90px;
-      margin-left: 55px;
-    }
-
-    .back-btn {
-      background: rgba(255,255,255,0.1);
-      border: 2px solid #ffcc00;
-      padding: 10px 20px;
-      border-radius: 8px;
-      color: white;
-      font-weight: bold;
-      font-size: 0.95em;
-      text-decoration: none;
-      transition: 0.3s;
-      display: inline-block;
-    }
-
-    .back-btn:hover {
-      background: #ffcc00;
-      color: black;
-      text-shadow: 0 0 10px #ffcc00;
-    }
-
-    /* ===== KONTEN FORM ===== */
     .content {
       margin: 20px auto 60px;
       width: 60%;
@@ -130,40 +74,102 @@
       background-color: #e6b800;
     }
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 768px) {
-      .content {
-        width: 90%;
-        padding: 20px;
-      }
 
-      .main {
-        margin-top: 90px;
-        margin-left: 25px;
-      }
-    }
-  </style>
-</head>
-<body>
 
-  <!-- NAVBAR -->
-  <header>
-    <img src="Logo zyactra.png" alt="Logo ZYACTRA" class="logo-img">
-    <nav class="navigation">
-      <a href="home.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="gallery.html">GALLERY</a>
-      <a href="profile.html">PROFILE</a>
-      <a href="tugas.html">TUGAS</a>
-    </nav>
-  </header>
 
-  <!-- TOMBOL BACK -->
-  <div class="main">
-    <a href="tugas.html" class="back-btn">← BACK</a>
+  </textarea>
+
+  <!-- BLOCK YANG DITAMPILKAN -->
+ <pre class="code-output"></pre>
+  <button class="copy-btn">Salin</button>
+</div>
+
+
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+index.html
+
+  &lt;div class="content"&gt;
+    &lt;form&gt;
+      &lt;h2&gt;Free Registration&lt;h2&gt;
+      &lt;table cellpadding="5" cellspacing="0"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Nama&lt;td&gt;
+          &lt;td&gt;:&lt;td&gt;
+          &lt;td&gt;&lt;input type="text" size="15" name="nama"&gt;&lt;td&gt;
+        &lt;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Tgl Lahir&lt;td&gt;
+          &lt;td&gt;:&lt;td&gt;
+          &lt;td&gt;
+            &lt;input type="text" size="4" name="tgl"&gt; 
+            &lt;input type="text" size="4" name="bln"&gt; 
+            &lt;input type="text" size="6" name="thn"&gt;
+          &lt;td&gt;
+        &lt;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Alamat&lt;td&gt;
+          &lt;td&gt;:&lt;td&gt;
+          &lt;td&gt;&lt;textarea name="alamat" rows="2" cols="40"&gt;&lt;textarea&gt;&lt;td&gt;
+        &lt;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Kota&lt;td&gt;
+          &lt;td&gt;:&lt;td&gt;
+          &lt;td&gt;&lt;input type="text" size="20" name="kota"&gt;&lt;td&gt;
+        &lt;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Pekerjaan&lt;td&gt;
+          &lt;td&gt;:&lt;td&gt;
+          &lt;td&gt;
+            &lt;select name="pekerjaan"&gt;
+              &lt;option value="Tani"&gt;Tani&lt;option&gt;
+              &lt;option value="Guru"&gt;Guru&lt;option&gt;
+              &lt;option value="Pegawai"&gt;Pegawai&lt;option&gt;
+              &lt;option value="Wiraswasta"&gt;Wiraswasta&lt;option&gt;
+            &lt;select&gt;
+          &lt;td&gt;
+        &lt;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Jenis Kelamin&lt;td&gt;
+          &lt;td&gt;:&lt;td&gt;
+          &lt;td&gt;
+            &lt;input type="radio" name="jk" value="Laki-Laki"&gt; Laki-Laki
+            &lt;input type="radio" name="jk" value="Perempuan"&gt; Perempuan
+          &lt;td&gt;
+        &lt;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Hobby&lt;td&gt;
+          &lt;td&gt;:&lt;td&gt;
+          &lt;td&gt;
+            &lt;input type="checkbox" name="hobby" value="Reading"&gt; Reading&lt;br&gt;
+            &lt;input type="checkbox" name="hobby" value="Sport"&gt; Sport&lt;br&gt;
+            &lt;input type="checkbox" name="hobby" value="Singing"&gt; Singing&lt;br&gt;
+            &lt;input type="checkbox" name="hobby" value="Traveling"&gt; Traveling
+          &lt;td&gt;
+        &lt;tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;td&gt;&lt;td&gt;&lt;td&gt;
+          &lt;td&gt;
+            &lt;input type="submit" value="Kirim"&gt;
+            &lt;input type="reset" value="Cancel"&gt;
+          &lt;td&gt;
+        &lt;tr&gt;
+      &lt;table&gt;
+    &lt;form&gt;
+  &lt;div&gt;
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+  <div class="keterangan">
+    <h2>
+      HASIL OUTPUT
+    </h2>
   </div>
 
-  <!-- ISI UTAMA -->
   <div class="content">
     <form>
       <h2>Free Registration</h2>
@@ -233,5 +239,36 @@
     </form>
   </div>
 
-</body>
+    <div class="nav-prev-next">
+  <a href="tugas7.html" class="btn-circle prev">⬅</a>
+  <a href="tugas9.html" class="btn-circle next">➡</a>
+</div>
+
+
+<footer>
+  <div class="footer__container sectioncontainer">
+
+
+
+    <div class="footer__copyright">
+      <small>© 2025 Akbar Aditiya Sugianto BENGKEL CODING.</small>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../main.js?v=2.0"></script>
+    <script src="../../copybutton.js"></script>
+    <script src="../../copybuttoncss.js"></script>
+
+
+  </body>
 </html>
+
+
+
+
+
+
+

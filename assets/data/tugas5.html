@@ -14,26 +14,12 @@
     <title>Akbar AS</title>
   </head>
   <body>
-<nav>
-  <div class="navbar">
-    <div class="navheader">
-      <div class="navlogo">
-        <i class="fas fa-code"></i> 
-        <a href="../../index.html">Akbar AS</a>
-      </div>
-      <div class="nav-actions">
-      </div>
-      <div class="navmenubtn" id="menu-btn">
-        <i class="fas fa-bars"></i> 
-      </div>
-    </div>
-    <ul class="links" id="nav-links">
-      <li><a href="../../index.html" class="active">Home</a></li>
-    </ul>
-    <div class="overlay" id="overlay"></div>
-  </div>
-</nav>
+ 
 <div class="keterangan">
+   <h2>
+    PERTEMUAN 5 <br/>
+    HYPERLINK
+  </h2>
     <h2>
       KODE HTML DAN CSS
     </h2>
@@ -45,51 +31,42 @@
       
     style.css
   
-.home-section {
-  text-align: center;
-  padding: 40px 20px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 20px;
 }
 
-.line {
-  height: 4px;
-  width: 95%;
-  background: #fff;
-  margin: 10px auto 30px auto;
+.navbar-pertemuan5 {
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+    width: 50%;
+    padding: 10px 0;
 }
 
-.top-box {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
+.navbar-pertemuan5 a {
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
 }
 
-.top-box h2 {
-  font-size: 24px;
+.navbar-pertemuan5 a:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
-.bottom-boxes {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+/* Konten */
+.content {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
 }
 
-.bottom-box {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  border-radius: 15px;
-  width: 250px;
-  text-align: center;
-}
-
-.bottom-box h3 {
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.bottom-box p {
-  font-size: 14px;
+/* Footer teks */
+.footer-text {
+    margin-top: 20px;
+    font-weight: bold;
 }
 
   </textarea>
@@ -106,26 +83,32 @@
   
 index.html
 
-&ltsection class="home-section"&gt;
-    &ltdiv class="line"&gt;&lt/div&gt;
-    &ltdiv class="top-box"&gt;
-      &lth2&gt;Selamat Datang di Website Kami&lt/h2&gt;
-    &lt/div&gt;
-    &ltdiv class="bottom-boxes"&gt;
-      &ltdiv class="bottom-box"&gt;
-        &lth3&gt;Visi&lt/h3&gt;
-        &ltp&gt;Menjadi platform informasi terbaik untuk semua orang.&lt/p&gt;
-      &lt/div&gt;
-      &ltdiv class="bottom-box"&gt;
-        &lth3&gt;Misi&lt/h3&gt;
-        &ltp&gt;Menyajikan konten yang bermanfaat, mudah dipahami, dan terpercaya.&lt/p&gt;
-      &lt/div&gt;
-      &ltdiv class="bottom-box"&gt;
-        &lth3&gt;Tujuan&lt/h3&gt;
-        &ltp&gt;Membantu pengguna memperoleh informasi secara cepat dan tepat.&lt/p&gt;
-      &lt/div&gt;
-    &lt/div&gt;
-  &lt/section&gt;
+<div class="content">
+    <nav class="navbar-pertemuan5">
+        <a href="home.html">Home</a>
+        <a href="profil.html">Profil</a>
+        <a href="about.html">About</a>
+        <a href="galery.html">Gallery</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+        <p>
+            Assalammualaikum Wr. Wb.<br>
+            Apakabar semua. Salam kenal ini adalah web perdanaku.
+            Web ini berisi informasi tentang kegemaranku.
+        </p>
+        <p>
+            Semoga web ini dapat menginspirasi Anda pada waktu liburan.
+            <a href="https://www.google.com" target="_blank">Google</a>
+        </p>
+        <p>
+            Silakan hubungi saya jika ada yang ingin didiskusikan melalui
+            <a href="mailto:endarnirmala@gmail.com">Email</a>
+        </p>
+        <p class="footer-text">
+            Universitas Pamulang Teknik Informatika S-1<br>
+            Pemrograman Web 1 42
+        </p>
+    </div>
   </textarea>
 <pre class="code-output"></pre>
 <button class="copy-btn">Salin</button>
@@ -137,26 +120,36 @@ index.html
     </h2>
   </div>
 
-  <section class="home-section">
-    <div class="line"></div>
-    <div class="top-box">
-      <h2>Selamat Datang di Website Kami</h2>
+    <div class="content">
+    <nav class="navbar-pertemuan5">
+        <a href="home.html">Home</a>
+        <a href="profil.html">Profil</a>
+        <a href="about.html">About</a>
+        <a href="galery.html">Gallery</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+        <p>
+            Assalammualaikum Wr. Wb.<br>
+            Apakabar semua. Salam kenal ini adalah web perdanaku.
+            Web ini berisi informasi tentang kegemaranku.
+        </p>
+
+        <p>
+            Semoga web ini dapat menginspirasi Anda pada waktu liburan.
+            <a href="https://www.google.com" target="_blank">Google</a>
+        </p>
+
+        <p>
+            Silakan hubungi saya jika ada yang ingin didiskusikan melalui
+            <a href="mailto:endarnirmala@gmail.com">Email</a>
+        </p>
+
+        <p class="footer-text">
+            Universitas Pamulang Teknik Informatika S-1<br>
+            Pemrograman Web 1 42
+        </p>
     </div>
-    <div class="bottom-boxes">
-      <div class="bottom-box">
-        <h3>Visi</h3>
-        <p>Menjadi platform informasi terbaik untuk semua orang.</p>
-      </div>
-      <div class="bottom-box">
-        <h3>Misi</h3>
-        <p>Menyajikan konten yang bermanfaat, mudah dipahami, dan terpercaya.</p>
-      </div>
-      <div class="bottom-box">
-        <h3>Tujuan</h3>
-        <p>Membantu pengguna memperoleh informasi secara cepat dan tepat.</p>
-      </div>
-    </div>
-  </section>
     <div class="nav-prev-next">
   <a href="tugas4.html" class="btn-circle prev">⬅</a>
   <a href="tugas6.html" class="btn-circle next">➡</a>

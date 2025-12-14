@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../sourcecode.css" />
+    <title>Akbar AS</title>
+
+  </head>
+  <body>
+
+<div class="keterangan">
+   <h2>
+    PERTEMUAN 15 <br/>
+    DIALOG BOX
+  </h2>
+    <h2>
+      KODE HTML, CSS DAN JAVASCRIPT
+    </h2>
+</div>
+
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+index.html
+
+ <h2>Form Input Data</h2>
+    <form onsubmit="prosesForm(event)">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="umur">Umur:</label>
+        <input type="number" id="umur" name="umur" required><br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+script.js
+
+<script>
+    function prosesForm(event) {
+        event.preventDefault(); 
+
+        let nama = document.getElementById("nama").value;
+        let umur = document.getElementById("umur").value;
+
+        alert("Halo " + nama + ", umur Anda " + umur + " tahun.");
+
+        let hobi = prompt("Sebutkan satu hobi Anda:");
+
+            
+        let yakin = confirm("Apakah Anda yakin ingin menyimpan data ini?\nNama: " + nama + "\nUmur: " + umur + "\nHobi: " + hobi);
+
+        if (yakin) {
+            alert("Data berhasil disimpan!");
+        } else {
+            alert("Data dibatalkan.");
+        }
+    }
+    </script>
+
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+  <div class="keterangan">
+    <h2>
+      HASIL OUTPUT
+    </h2>
+  </div>
+
+    <div class="content">
+ <h2>Form Input Data</h2>
+    <form onsubmit="prosesForm(event)">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="umur">Umur:</label>
+        <input type="number" id="umur" name="umur" required><br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+    </div>
+    <div class="nav-prev-next">
+  <a href="tugas14.html" class="btn-circle prev">⬅</a>
+  <a href="tugas16.html" class="btn-circle next">➡</a>
+</div>
+
+
+<footer>
+  <div class="footer__container sectioncontainer">
+
+
+
+    <div class="footer__copyright">
+      <small>© 2025 Akbar Aditiya Sugianto BENGKEL CODING.</small>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../main.js?v=2.0"></script>
+    <script src="../../copybutton.js"></script>
+    <script src="../../copybuttoncss.js"></script>
+    <script>
+        function prosesForm(event) {
+            event.preventDefault(); // Mencegah form submit default
+
+            // Mengambil nilai dari form
+            let nama = document.getElementById("nama").value;
+            let umur = document.getElementById("umur").value;
+
+            // Menampilkan alert dengan data yang dimasukkan
+            alert("Halo " + nama + ", umur Anda " + umur + " tahun.");
+
+            // Menggunakan prompt untuk input tambahan
+            let hobi = prompt("Sebutkan satu hobi Anda:");
+
+            // Menggunakan confirm untuk konfirmasi
+            let yakin = confirm("Apakah Anda yakin ingin menyimpan data ini?\nNama: " + nama + "\nUmur: " + umur + "\nHobi: " + hobi);
+
+            if (yakin) {
+                alert("Data berhasil disimpan!");
+            } else {
+                alert("Data dibatalkan.");
+            }
+        }
+    </script>
+
+
+
+  </body>
+</html>

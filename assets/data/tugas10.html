@@ -1,163 +1,136 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tugas 10 - Penggunaan IFRAME</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../sourcecode.css" />
+    <title>Akbar AS</title>
 
-  <style>
-    /* === Reset & Font === */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+  </head>
+  <body>
+ 
+<div class="keterangan">
+   <h2>
+    PERTEMUAN 10 <br/>
+    IFRAME
+  </h2>
+    <h2>
+      KODE HTML DAN CSS
+    </h2>
+</div>
 
-    /* === Latar belakang dan warna umum === */
-    body {
-      background: 
-        linear-gradient(rgba(0,0,50,0.5), rgba(0,0,50,0.5)),
-        url('download.jpeg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+<div class="code-container" data-type="css">
 
-    /* === Navbar dari tugas7 === */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(0, 0, 50, 0.4);
-      padding: 10px 40px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(8px);
-    }
+<textarea class="raw" style="display:none;">
+      
+    style.css
+  
+.iframe {
+  width: 90%;
+  max-width: 100%;
+  height: 60vh;           /* mengikuti tinggi layar */
+  min-height: 350px;     /* batas minimum */
+  border: 2px solid #ffcc00;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 0, 0.2);
+  background: transparent;
+  outline: none;
+  transition: 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
 
-    .logo-img {
-      height: 55px;
-      width: auto;
-    }
+.iframe:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 0, 0.5);
+}
 
-    .navigation a {
-      color: white;
-      text-decoration: none;
-      margin-left: 25px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
 
-    .navigation a:hover {
-      color: yellow;
-      text-shadow: 0 0 10px #ffcc00;
-    }
+/* FORCE DESKTOP VIEW */
+.desktop-view {
+  min-width: 1200px;     /* paksa lebar desktop */
+  transform: scale(0.8); /* perkecil agar muat */
+  transform-origin: top center;
+}
+.iframe-desktop-wrapper {
+  width: 100%;
+  overflow-x: auto;  /* bisa scroll horizontal */
+}
 
-    /* === Tombol BACK === */
-    .main {
-      margin-top: 30px;
-      margin-left: 80px;
-      text-align: left;
-    }
+.iframe-desktop-wrapper iframe {
+  width: 1200px;   /* ukuran desktop */
+  height: 550px;
+  border: 2px solid #ffcc00;
+  border-radius: 12px;
+}
 
-    .back-btn {
-      background: rgba(255,255,255,0.1);
-      border: 2px solid #ffcc00;
-      padding: 10px 20px;
-      border-radius: 8px;
-      color: white;
-      font-weight: bold;
-      font-size: 0.95em;
-      text-decoration: none;
-      transition: 0.3s;
-      display: inline-block;
-    }
+  </textarea>
 
-    .back-btn:hover {
-      background: #ffcc00;
-      color: black;
-      text-shadow: 0 0 10px #ffcc00;
-    }
+  <!-- BLOCK YANG DITAMPILKAN -->
+ <pre class="code-output"></pre>
+  <button class="copy-btn">Salin</button>
+</div>
 
-    /* === Konten Utama (IFRAME) === */
-    .content {
-      margin-top: 40px;
-      text-align: center;
-      color: white;
-    }
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+index.html
 
-    h2 {
-      color: #ffcc00;
-      text-shadow: 0 0 10px rgba(255,255,255,0.5);
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-
-    iframe {
-      width: 90%;
-      height: 550px;
-      border: 2px solid #ffcc00;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 0, 0.2);
-      background: transparent;
-      outline: none;
-      transition: 0.3s ease;
-    }
-
-    iframe:hover {
-      box-shadow: 0 0 25px rgba(255, 255, 0, 0.5);
-    }
-
-    /* === Responsif === */
-    @media (max-width: 768px) {
-      iframe {
-        width: 95%;
-        height: 400px;
-      }
-      .main {
-        margin-left: 25px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- 🔹 Navbar -->
-  <header>
-    <img src="Logo zyactra.png" alt="Logo ZYACTRA" class="logo-img">
-    <nav class="navigation">
-      <a href="home.html">HOME</a>
-      <a href="about.html">ABOUT</a>
-      <a href="gallery.html">GALLERY</a>
-      <a href="profile.html">PROFILE</a>
-      <a href="tugas.html">TUGAS</a>
-    </nav>
-  </header>
-
-  <!-- 🔹 Tombol BACK -->
-  <div class="main">
-    <a href="tugas.html" class="back-btn">← BACK</a>
-  </div>
-
-  <!-- 🔹 Konten IFRAME -->
-  <div class="content">
-    <h2>Penggunaan IFRAME by: ZYACTRA</h2>
-    <p>Berikut contoh penggunaan IFRAME untuk menampilkan website lain di dalam halaman ini.</p>
-
-    <iframe 
-      src="https://zyactra-ayubibrahim.netlify.app/" 
-      frameborder="0" 
-      scrolling="no">
+<div class="iframe-desktop-wrapper">
+   <iframe 
+      src="https://akbaras005tplm004.netlify.app/" 
+      class="iframe">
     </iframe>
+</div>
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+
+  <div class="keterangan">
+    <h2>
+      HASIL OUTPUT
+    </h2>
   </div>
 
-</body>
+    <div class="content">
+<div class="iframe-desktop-wrapper">
+   <iframe 
+      src="https://akbaras005tplm004.netlify.app/" 
+      class="iframe">
+    </iframe>
+</div>
+    </div>
+    <div class="nav-prev-next">
+  <a href="tugas9.html" class="btn-circle prev">⬅</a>
+  <a href="tugas11.html" class="btn-circle next">➡</a>
+</div>
+
+
+<footer>
+  <div class="footer__container sectioncontainer">
+
+
+
+    <div class="footer__copyright">
+      <small>© 2025 Akbar Aditiya Sugianto BENGKEL CODING.</small>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../main.js?v=2.0"></script>
+    <script src="../../copybutton.js"></script>
+    <script src="../../copybuttoncss.js"></script>
+
+
+  </body>
 </html>

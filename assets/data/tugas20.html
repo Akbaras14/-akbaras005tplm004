@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../sourcecode.css" />
+    <title>Akbar AS</title>
+<style>
+    h2 {
+        color: blue;
+    }
+
+    input {
+        padding: 6px;
+        width: 60px;
+        text-align: center;
+    }
+
+    button {
+        padding: 6px 15px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
+    button:hover {
+        background-color: darkblue;
+    }
+
+    pre {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+</style>
+  </head>
+  <body>
+
+<div class="keterangan">
+   <h2>
+    PERTEMUAN 20 <br/>
+    BINTANG SIKU SIKU
+  </h2>
+    <h2>
+      KODE HTML, CSS DAN JAVASCRIPT
+    </h2>
+</div>
+
+<div class="code-container" data-type="css">
+<textarea class="raw" style="display:none;">
+      
+    style.css
+
+<style>
+    h2 {
+        color: blue;
+    }
+
+    input {
+        padding: 6px;
+        width: 60px;
+        text-align: center;
+    }
+
+    button {
+        padding: 6px 15px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
+    button:hover {
+        background-color: darkblue;
+    }
+
+    pre {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+</style>
+  </textarea>
+
+  <!-- BLOCK YANG DITAMPILKAN -->
+ <pre class="code-output"></pre>
+  <button class="copy-btn">Salin</button>
+</div>
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+index.html
+
+<h2>Membuat Bintang Siku-Siku</h2>
+
+<p>Masukkan jumlah baris:</p>
+<input type="number" id="jumlah" min="1">
+<button onclick="buatBintang()">Proses</button>
+<pre id="hasil"></pre>
+
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+script.js
+
+<script>
+    function buatBintang() {
+        let n = document.getElementById("jumlah").value;
+        let hasil = "";
+
+        for (let i = 1; i <= n; i++) {
+            for (let j = 1; j <= i; j++) {
+                hasil += "*";
+            }
+            hasil += "\n";
+        }
+
+        document.getElementById("hasil").textContent = hasil;
+    }
+</script>
+
+
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+  <div class="keterangan">
+    <h2>
+      HASIL OUTPUT
+    </h2>
+  </div>
+
+    <div class="content">
+<h2>Membuat Bintang Siku-Siku</h2>
+
+<p>Masukkan jumlah baris:</p>
+<input type="number" id="jumlah" min="1">
+<button onclick="buatBintang()">Proses</button>
+
+<pre id="hasil"></pre>
+    </div>
+    <div class="nav-prev-next">
+  <a href="tugas19.html" class="btn-circle prev">⬅</a>
+  <a href="../../index.html" class="btn-circle next">🏠</a>
+</div>
+
+
+<footer>
+  <div class="footer__container sectioncontainer">
+
+
+
+    <div class="footer__copyright">
+      <small>© 2025 Akbar Aditiya Sugianto BENGKEL CODING.</small>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../main.js?v=2.0"></script>
+    <script src="../../copybutton.js"></script>
+    <script src="../../copybuttoncss.js"></script>
+    <script>
+    function buatBintang() {
+        let n = document.getElementById("jumlah").value;
+        let hasil = "";
+
+        for (let i = 1; i <= n; i++) {
+            for (let j = 1; j <= i; j++) {
+                hasil += "*";
+            }
+            hasil += "\n";
+        }
+
+        document.getElementById("hasil").textContent = hasil;
+    }
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../sourcecode.css" />
+    <title>Akbar AS</title>
+    <style>
+        h2 {
+            color: #2e8b57;
+        }
+        .output {
+             margin-top: 20px;
+            background-color: #e0f7fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+        input[type="number"] {
+            padding: 5px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 15px; 
+            background-color: #2e8b57; 
+            color: white;
+            border: none;
+            border-radius: 5px; 
+            cursor: pointer; }
+        button:hover {
+            background-color: #3cb371;
+        }
+
+    </style>
+  </head>
+  <body>
+
+<div class="keterangan">
+   <h2>
+    PERTEMUAN 14 <br/>
+    PENGENALAN JAVA SCRIPT
+  </h2>
+    <h2>
+      KODE HTML, CSS DAN JAVASCRIPT
+    </h2>
+</div>
+
+<div class="code-container" data-type="css">
+<textarea class="raw" style="display:none;">
+      
+    style.css
+
+h2 {
+    color: #2e8b57;
+        }
+
+.output {
+    margin-top: 20px;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+label, input {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="number"] {
+    padding: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3cb371;
+}
+  </textarea>
+
+  <!-- BLOCK YANG DITAMPILKAN -->
+ <pre class="code-output"></pre>
+  <button class="copy-btn">Salin</button>
+</div>
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+index.html
+
+<h2>Menghitung Luas Trapesium</h2>
+
+<label for="garisAtas">Garis Atas (cm):</label>
+<input type="number" id="garisAtas" value="8">
+
+<label for="garisBawah">Garis Bawah (cm):</label>
+<input type="number" id="garisBawah" value="12">
+
+<label for="tinggi">Tinggi (cm):</label>
+<input type="number" id="tinggi" value="5">
+
+<button onclick="hitungLuas()">Hitung Luas</button>
+
+<div class="output" id="hasil"></div>
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+script.js
+
+<script>
+function hitungLuas() {
+    // Ambil nilai dari input
+    let a = parseFloat(document.getElementById('garisAtas').value);
+    let b = parseFloat(document.getElementById('garisBawah').value);
+    let t = parseFloat(document.getElementById('tinggi').value);
+
+    // Hitung luas trapesium
+    let luas = 0.5 * (a + b) * t;
+
+    // Tampilkan hasil
+    let output = `
+        Diketahui:<br>
+        Garis Atas: ${a} Cm<br>
+        Garis Bawah: ${b} Cm<br>
+        Tinggi: ${t} Cm<br><br>
+        Maka:<br>
+        Luas: 0.5 x (${a} + ${b}) x ${t} = ${luas} Cm<sup>2</sup>
+    `;
+    document.getElementById('hasil').innerHTML = output;
+}
+</script>
+
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+  <div class="keterangan">
+    <h2>
+      HASIL OUTPUT
+    </h2>
+  </div>
+
+    <div class="content">
+<h2>Menghitung Luas Trapesium</h2>
+
+<label for="garisAtas">Garis Atas (cm):</label>
+<input type="number" id="garisAtas" value="8">
+
+<label for="garisBawah">Garis Bawah (cm):</label>
+<input type="number" id="garisBawah" value="12">
+
+<label for="tinggi">Tinggi (cm):</label>
+<input type="number" id="tinggi" value="5">
+
+<button onclick="hitungLuas()">Hitung Luas</button>
+
+<div class="output" id="hasil"></div>
+    </div>
+    <div class="nav-prev-next">
+  <a href="tugas13.html" class="btn-circle prev">⬅</a>
+  <a href="tugas15.html" class="btn-circle next">➡</a>
+</div>
+
+
+<footer>
+  <div class="footer__container sectioncontainer">
+
+
+
+    <div class="footer__copyright">
+      <small>© 2025 Akbar Aditiya Sugianto BENGKEL CODING.</small>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../main.js?v=2.0"></script>
+    <script src="../../copybutton.js"></script>
+    <script src="../../copybuttoncss.js"></script>
+    <script>
+function hitungLuas() {
+    // Ambil nilai dari input
+    let a = parseFloat(document.getElementById('garisAtas').value);
+    let b = parseFloat(document.getElementById('garisBawah').value);
+    let t = parseFloat(document.getElementById('tinggi').value);
+
+    // Hitung luas trapesium
+    let luas = 0.5 * (a + b) * t;
+
+    // Tampilkan hasil
+    let output = `
+        Diketahui:<br>
+        Garis Atas: ${a} Cm<br>
+        Garis Bawah: ${b} Cm<br>
+        Tinggi: ${t} Cm<br><br>
+        Maka:<br>
+        Luas: 0.5 x (${a} + ${b}) x ${t} = ${luas} Cm<sup>2</sup>
+    `;
+    document.getElementById('hasil').innerHTML = output;
+}
+</script>
+
+
+
+  </body>
+</html>

@@ -364,63 +364,99 @@ body {
   color: var(--white);
 }
 
+/* Container utama untuk profile */
 .profilecontainer {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 3rem 1rem 1rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
+
 .profilecontainer h2 {
-  margin-bottom: 1rem;
-  font-size: 3rem;
-  font-weight: 700;
-  background: linear-gradient(
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+    background: linear-gradient(
     to right bottom,
-    #c7c7c7 25%,
+    #a5a5a5 25%,
     var(--primary-color-dark)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
-.profilecontainer h1 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  background: #0099cc;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-}
-.profilecontainer img {
-  max-width: 250px;
-  margin-inline: auto;
-  margin-bottom: 0.5rem;
-  filter: grayscale(100%) brightness(70%); /* abu-abu + sedikit gelap */
-  transition: 0.4s ease-in-out;
-}
 
-/* Saat dihover */
-.profilecontainer img:hover {
-  filter: grayscale(0%) brightness(110%); /* warna + lebih terang */
-  transform: scale(1.03);                 /* sedikit membesar (opsional) */
-}
-
-.profilecontainer p {
-  margin-bottom: 1rem;
-  color: var(--primary-color-light);
-}
-.profilecontainer .kirimemail a {
-  margin-bottom: 2rem;
+/* Layout utama dengan Flexbox */
+.profile-content {
   display: flex;
-  font-size: 1.2rem;
+  align-items: center;
+  gap: 60px; /* Jarak antara teks dan gambar */
+  flex-wrap: wrap; /* Responsif untuk mobile */
+}
+
+/* Bagian teks (kiri) */
+.profile-text {
+  flex: 1;
+  min-width: 300px; /* Minimum width untuk responsif */
+}
+
+.profile-text h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00a2ff;
+  line-height: 1.3;
+}
+
+.profile-info {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #00a2ff;
+  line-height: 1.5;
+}
+
+/* Bagian gambar (kanan) */
+.profile-image {
+  flex: 1;
+  min-width: 300px; /* Minimum width untuk responsif */
+  text-align: center; /* Pusatkan gambar di dalam container */
+}
+
+.profile-image img {
+  width: 100%;
+  max-width: 400px; /* Maksimum lebar gambar */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Pastikan gambar proporsional */
+}
+
+/* Style untuk email */
+.kirimemail {
+  margin-top: 25px;
+}
+
+.kirimemail a {
+  display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: var(--primary-color-light);
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
+
+.kirimemail a:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.kirimemail i {
+  font-size: 1.2rem;
+}
+
 
 footer {
   width: 100%;
@@ -857,6 +893,14 @@ footer {
 .top-box h2 {
   font-size: 24px;
 }
+.foto {
+   display: block;
+  margin: 0 auto 15px auto; /* center horizontal */
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid white;
+}
 
 /* Kotak bawah */
 .bottom-boxes {
@@ -926,7 +970,37 @@ footer {
   box-shadow: 0 0 0 3px rgba(0, 194, 255, 0.4);
 }
 
+.navbar-pertemuan5 {
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+    width: 50%;
+    padding: 10px 0;
+}
 
+.navbar-pertemuan5 a {
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.navbar-pertemuan5 a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Konten */
+.content {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Footer teks */
+.footer-text {
+    margin-top: 20px;
+    font-weight: bold;
+}
 
 
 /* ---------------------------
@@ -977,6 +1051,125 @@ footer {
 .code-output .value {
   color: #98c379; /* hijau neon */
 }
+
+.iframe {
+  width: 90%;
+  max-width: 100%;
+  height: 60vh;           /* mengikuti tinggi layar */
+  min-height: 350px;     /* batas minimum */
+  border: 2px solid #569cd6;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 195, 255, 0.2);
+  background: transparent;
+  outline: none;
+  transition: 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.iframe:hover {
+  box-shadow: 0 0 25px rgba(0, 238, 255, 0.5);
+}
+
+
+/* FORCE DESKTOP VIEW */
+.desktop-view {
+  min-width: 1200px;     /* paksa lebar desktop */
+  transform: scale(0.8); /* perkecil agar muat */
+  transform-origin: top center;
+}
+.iframe-desktop-wrapper {
+  width: 100%;
+  overflow-x: auto;  /* bisa scroll horizontal */
+}
+
+.iframe-desktop-wrapper iframe {
+  width: 1200px;   /* ukuran desktop */
+  height: 550px;
+  border: 2px solid #569cd6;
+  border-radius: 12px;
+}
+
+
+/* ===== PAGINATION ===== */
+.pagination {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 8px;
+margin-top: 25px;
+}
+
+.pagination button {
+padding: 6px 12px;
+border: none;
+border-radius: 6px;
+background: #222;
+color: white;
+cursor: pointer;
+min-width: 36px;
+}
+
+.pagination button.active {
+background: #0059ff;
+color: black;
+font-weight: bold;
+}
+
+/* ================================================= */
+/* 📱 MOBILE (max-width: 480px) */
+/* ================================================= */
+@media (max-width: 480px) {
+.materigrid {
+grid-template-columns: 1fr;
+gap: 16px;
+}
+
+.materi-card {
+padding: 12px;
+}
+
+.materi-card h3 {
+font-size: 16px;
+}
+
+.materi-card p {
+font-size: 13px;
+}
+
+.pagination button {
+padding: 5px 10px;
+font-size: 13px;
+}
+}
+
+/* ================================================= */
+/* 📱📱 MOBILE BESAR (481px – 767px) */
+/* ================================================= */
+@media (min-width: 481px) and (max-width: 767px) {
+.materigrid {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/* ================================================= */
+/* 📱💻 TABLET (768px – 1024px) */
+/* ================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+.materigrid {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+
+/* ================================================= */
+/* 💻 DESKTOP BESAR (>= 1200px) */
+/* ================================================= */
+@media (min-width: 1200px) {
+.materigrid {
+grid-template-columns: repeat(4, 1fr);
+}
+}
+
 
 
 @keyframes runningText {

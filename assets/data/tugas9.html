@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../../sourcecode.css" />
+    <title>Akbar AS</title>
+    <style>
+                table {
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+        }
+        td {
+            vertical-align: top;
+            border: 1px solid #2e8b57;
+        }
+        #menu {
+            width: 200px;
+            background-color: #e0f7fa;
+            padding: 10px;
+        }
+        #menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #006064;
+            font-weight: bold;
+        }
+        #menu a:hover {
+            background-color: #b2ebf2;
+        }
+        #konten {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2e8b57;
+        }
+    </style>
+  </head>
+  <body>
+ 
+<div class="keterangan">
+   <h2>
+    PERTEMUAN 9 <br/>
+    FRAME
+  </h2>
+    <h2>
+      KODE HTML DAN CSS
+    </h2>
+</div>
+
+<div class="code-container" data-type="css">
+
+<textarea class="raw" style="display:none;">
+      
+    style.css
+  
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8ff;
+        }
+        table {
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+        }
+        td {
+            vertical-align: top;
+            border: 1px solid #2e8b57;
+        }
+        #menu {
+            width: 200px;
+            background-color: #e0f7fa;
+            padding: 10px;
+        }
+        #menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #006064;
+            font-weight: bold;
+        }
+        #menu a:hover {
+            background-color: #b2ebf2;
+        }
+        #konten {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2e8b57;
+        }
+  </textarea>
+
+  <!-- BLOCK YANG DITAMPILKAN -->
+ <pre class="code-output"></pre>
+  <button class="copy-btn">Salin</button>
+</div>
+
+
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+index.html
+
+<table>
+    <tr>
+        <td id="menu">
+            <h2>Menu</h2>
+            <a href="#" onclick="tampilkanHalaman('home')">Beranda</a>
+            <a href="#" onclick="tampilkanHalaman('profil')">Profil</a>
+            <a href="#" onclick="tampilkanHalaman('portofolio')">Portofolio</a>
+            <a href="#" onclick="tampilkanHalaman('kontak')">Kontak</a>
+        </td>
+        <td id="konten">
+            <!-- Konten akan tampil di sini -->
+        </td>
+    </tr>
+</table>
+
+
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+
+<div class="code-container" data-type="html">
+<textarea class="raw" style="display:none;">
+  
+script.js
+
+<script>
+        function tampilkanHalaman(page) {
+            let konten = document.getElementById('konten');
+            if(page === 'home') {
+                konten.innerHTML = `
+                    <h1>Selamat Datang di Website Pribadi Akbar Aditiya s</h1>
+                    <p>Halo! Saya Akbar Aditiya s, seorang mahasiswa IT dan videographer. Website ini mempromosikan profil, karya, dan kontak saya.</p>
+                `;
+            } else if(page === 'profil') {
+                konten.innerHTML = `
+                    <h1>Profil Saya</h1>
+                    <p>Nama: Akbar Aditiya s</p>
+                    <p>Jurusan: Information Technology</p>
+                    <p>Keahlian: Videography, Programming, Web Development</p>
+                `;
+            } else if(page === 'portofolio') {
+                konten.innerHTML = `
+                    <h1>Portofolio</h1>
+                    <p>Berikut beberapa karya saya:</p>
+                    <ul>
+                        <li>Video Promosi Produk</li>
+                        <li>Animasi Stack Java</li>
+                        <li>Website Sederhana</li>
+                    </ul>
+                `;
+            } else if(page === 'kontak') {
+                konten.innerHTML = `
+                    <h1>Kontak Saya</h1>
+                    <p>Email: Akbar Aditiya s@example.com</p>
+                    <p>Telepon: 085893802972</p>
+                    <p>Instagram: @Akbar Aditiya s_videography</p>
+                `;
+            }
+        }
+
+        // Tampilkan halaman Home saat pertama kali dibuka
+        window.onload = function() {
+            tampilkanHalaman('home');
+        }
+    </script>
+
+  </textarea>
+<pre class="code-output"></pre>
+<button class="copy-btn">Salin</button>
+</div>
+  <div class="keterangan">
+    <h2>
+      HASIL OUTPUT
+    </h2>
+  </div>
+
+    <div class="content">
+    <table>
+    <tr>
+        <td id="menu">
+            <h2>Menu</h2>
+            <a href="#" onclick="tampilkanHalaman('home-pertemuan9')">Beranda</a>
+            <a href="#" onclick="tampilkanHalaman('profil-pertemuan9')">Profil</a>
+            <a href="#" onclick="tampilkanHalaman('portofolio-pertemuan9')">Portofolio</a>
+            <a href="#" onclick="tampilkanHalaman('kontak-pertemuan9')">Kontak</a>
+        </td>
+        <td id="konten-pertemuan9">
+            <!-- Konten akan tampil di sini -->
+        </td>
+    </tr>
+</table>
+    </div>
+    <div class="nav-prev-next">
+  <a href="tugas8.html" class="btn-circle prev">⬅</a>
+  <a href="tugas10.html" class="btn-circle next">➡</a>
+</div>
+
+
+<footer>
+  <div class="footer__container sectioncontainer">
+
+
+
+    <div class="footer__copyright">
+      <small>© 2025 Akbar Aditiya Sugianto BENGKEL CODING.</small>
+    </div>
+  </div>
+</footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../main.js?v=2.0"></script>
+    <script src="../../copybutton.js"></script>
+    <script src="../../copybuttoncss.js"></script>
+ <script>
+        function tampilkanHalaman(page) {
+            let kontenpertemuan9 = document.getElementById('konten-pertemuan9');
+            if(page === 'home-pertemuan9') {
+                kontenpertemuan9.innerHTML = `
+                    <h1>Selamat Datang di Website Pribadi Akbar Aditiya s</h1>
+                    <p>Halo! Saya Akbar Aditiya s, seorang mahasiswa IT dan videographer. Website ini mempromosikan profil, karya, dan kontak saya.</p>
+                `;
+            } else if(page === 'profil-pertemuan9') {
+                kontenpertemuan9.innerHTML = `
+                    <h1>Profil Saya</h1>
+                    <p>Nama: Akbar Aditiya s</p>
+                    <p>Jurusan: Information Technology</p>
+                    <p>Keahlian: Videography, Programming, Web Development</p>
+                `;
+            } else if(page === 'portofolio-pertemuan9') {
+                kontenpertemuan9.innerHTML = `
+                    <h1>Portofolio</h1>
+                    <p>Berikut beberapa karya saya:</p>
+                    <ul>
+                        <li>Video Promosi Produk</li>
+                        <li>Animasi Stack Java</li>
+                        <li>Website Sederhana</li>
+                    </ul>
+                `;
+            } else if(page === 'kontak-pertemuan9') {
+                kontenpertemuan9.innerHTML = `
+                    <h1>Kontak Saya</h1>
+                    <p>Email: AkbarAditiyas@example.com</p>
+                    <p>Telepon: 085893802972</p>
+                    <p>Instagram: @AkbarAditiyas</p>
+                `;
+            }
+        }
+
+
+    </script>
+
+
+  </body>
+</html>

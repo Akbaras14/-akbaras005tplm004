@@ -1,38 +1,122 @@
 [
-  {
-    "title": "Line, Paragraph, dan Heading HTML",
-    "subtitle": "Tugas Praktekum Pertemuan 2 Pemrograman Web 1",
-    "image": "assets/materi.jfif",
-    "link": "assets/data/tugas2.html"
-  },
-  {
-    "title": "Style Bold, Italic, Underline, dan Strikethrough di HTML",
-    "subtitle": "Tugas Praktikum Pertemuan 3 Pemrograman Web 1",
-   "image": "assets/materi.jfif",
-    "link": "assets/data/tugas3.html"
-  },
 {
-    "title": "Insert Vidio dan Audio di HTML",
-    "subtitle": "Tugas Praktikum Pertemuan 4 Pemrograman Web 1",
-   "image": "assets/materi.jfif",
-    "link": "assets/data/tugas4.html"
-  },
-  {
-    "title": "Card,Box,Grid di HTML dan CSS",
-    "subtitle": "Tugas Praktekum Pertemuan 5 Pemrograman Web 1",
-   "image": "assets/materi.jfif",
-    "link": "assets/data/tugas5.html"
-  },
-  {
-    "title": "List, Table, dan Link di HTML",
-    "subtitle": "Tugas Praktekum Pertemuan 6 Pemrograman Web 1",
-   "image": "assets/materi.jfif",
-    "link": "assets/data/tugas6.html"
-  },
-  {
-    "title": "Layouting Web Responsif Menggunakan Flexbox dan Media Query",
-    "subtitle": "Tugas Praktekum Pertemuan 7 Pemrograman Web 1",
-   "image": "assets/materi.jfif",
-    "link": "assets/data/tugas7.html"
-  }
+"title": "Basic Tag HTML",
+"subtitle": "Tugas Praktikum Pertemuan 2 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas2.html"
+},
+{
+"title": "Format Teks dan Karakter Khusus",
+"subtitle": "Tugas Praktikum Pertemuan 3 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas3.html"
+},
+{
+"title": "Menampilkan Gambar, Suara dan Video",
+"subtitle": "Tugas Praktikum Pertemuan 4 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas4.html"
+},
+{
+"title": "Hyperlink",
+"subtitle": "Tugas Praktikum Pertemuan 5 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas5.html"
+},
+{
+"title": "Bullet, Numbering dan List",
+"subtitle": "Tugas Praktikum Pertemuan 6 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas6.html"
+},
+{
+"title": "Tabel HTML",
+"subtitle": "Tugas Praktikum Pertemuan 7 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas7.html"
+},
+{
+"title": "Form HTML",
+"subtitle": "Tugas Praktikum Pertemuan 8 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas8.html"
+},
+{
+"title": "Frame",
+"subtitle": "Tugas Praktikum Pertemuan 9 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas9.html"
+},
+{
+"title": "Iframe",
+"subtitle": "Tugas Praktikum Pertemuan 10 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas10.html"
+},
+{
+"title": "CASCADING STYLE SHEET (CSS)",
+"subtitle": "Tugas Praktikum Pertemuan 11 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas11.html"
+},
+{
+"title": "CLASS DALAM CASCADING STYLE SHEET",
+"subtitle": "Tugas Praktikum Pertemuan 12 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas12.html"
+},
+{
+"title": "DIVISION (DIV)",
+"subtitle": "Tugas Praktikum Pertemuan 13 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas13.html"
+},
+{
+"title": "PENGENALAN JAVA SCRIPT",
+"subtitle": "Tugas Praktikum Pertemuan 14 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas14.html"
+},
+{
+"title": "DIALOG BOX",
+"subtitle": "Tugas Praktikum Pertemuan 15 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas15.html"
+},
+{
+"title": "TIPE DATA DAN OPERATOR",
+"subtitle": "Tugas Praktikum Pertemuan 16 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas16.html"
+},
+{
+"title": "STRUKTUR KENDALI DAN LOOPING",
+"subtitle": "Tugas Praktikum Pertemuan 17 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas17.html"
+},
+{
+"title": "FUNCTION DAN ARRAY",
+"subtitle": "Tugas Praktikum Pertemuan 18 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas18.html"
+},
+{
+"title": "Percabangan JavaScript",
+"subtitle": "Tugas Praktikum Pertemuan 19 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas19.html"
+},
+{
+"title": "BINTANG SAMA KAKI",
+"subtitle": "Tugas Praktikum Pertemuan 20 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas20.html"
+},
+{
+"title": "BINTANG SIKU SIKU",
+"subtitle": "Tugas Praktikum Pertemuan 21 Pemrograman Web 1",
+"image": "assets/materi.jfif",
+"link": "assets/data/tugas21.html"
+}
 ]
